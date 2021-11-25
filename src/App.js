@@ -1,25 +1,15 @@
-// import "./../node_modules/bootstrap/scss/bootstrap";
 import "./assets/scss/customizedBootstrap.scss";
 import "./assets/scss/style.scss";
+import RoutesList from "./components/_Others/RoutesList";
+import Layout from "./components/_Others/Layout/Layout";
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <RoutesList />
+      </Layout>
+    </BrowserRouter>
   );
 }
-
-export default App;

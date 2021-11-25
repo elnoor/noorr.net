@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
+.app {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: linear-gradient(180deg, #0d0e10, #212529 100px, #212529);
+
+  .container {
+    max-width: 960px;
+  }
+
+  header {
+    .brand {
+      text-shadow: -1px -1px 1px #06313e, 1px 1px 1px #052b40;
+      font-family: "Cinzel", serif;
+      opacity: 0.8;
+    }
+    .brand:hover {
+      text-shadow: -1px -1px 1px #06313e, 1px 1px 1px #052b40;
+      font-family: "Cinzel", serif;
+      opacity: 1;
+    }
+    
+    nav {
+      a {
+        opacity: 0.8;
+      }
+      a:hover {
+        opacity: 0.9;
+      }
+      a.active {
+        opacity: 1;
+        font-weight: bold;
+      }
+    }
+  }
+}
