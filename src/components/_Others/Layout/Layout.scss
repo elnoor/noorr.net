@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
 
 .app {
   min-height: 100vh;
@@ -11,17 +12,13 @@
 
   header {
     .brand {
-      text-shadow: -1px -1px 1px #06313e, 1px 1px 1px #052b40;
+      text-shadow: -1px -1px 1px #262c2c, 1px 1px 1px #000;
       font-family: "Cinzel", serif;
-      opacity: 0.8;
     }
-    .brand:hover {
-      text-shadow: -1px -1px 1px #06313e, 1px 1px 1px #052b40;
-      font-family: "Cinzel", serif;
-      opacity: 1;
-    }
-    
+
     nav {
+      font-family: "Cinzel", serif;
+
       a {
         opacity: 0.8;
       }
@@ -32,6 +29,12 @@
         opacity: 1;
         font-weight: bold;
       }
+    }
+  }
+
+  footer {
+    .brand {
+      font-family: "Cinzel Decorative", cursive;
     }
   }
 }

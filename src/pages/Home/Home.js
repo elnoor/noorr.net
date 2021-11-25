@@ -3,7 +3,7 @@ import React from "react";
 export default function Home() {
   return (
     <div style={{ textAlign: "justify" }}>
-      <h1 className="text-center">Hi there,</h1>
+    <h1 className="text-center text-light text-opacity-75">Hi there,</h1>
       <p>
         <a
           className="link-info text-decoration-none"
@@ -35,7 +35,10 @@ export default function Home() {
         check out my LinkedIn profile as it is usually more up-to-date. If you
         have something to tell me, please, do not hesitate to drop a line for me
         in contact page or via LinkedIn. I am more than happy to hear and meet
-        new people as it is always fun. Thanks.
+        new people as it is always fun.
+      </p>
+      <p>
+        <em>Thanks.</em>
       </p>
     </div>
   );
