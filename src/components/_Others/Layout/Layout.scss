@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap');
 
 .app {
   min-height: 100vh;
@@ -17,8 +16,6 @@
     }
 
     nav {
-      font-family: "Cinzel", serif;
-
       a {
         opacity: 0.8;
       }
