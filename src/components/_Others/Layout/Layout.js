@@ -5,7 +5,7 @@ import "./Layout.scss";
 export default function Layout({ children }) {
   return (
     <div className="app">
-      <div className="container py-3 text-secondary text-center">
+      <div className="container py-3 text-secondary">
         <Header />
         <main className="py-md-5">{children}</main>
         <Footer />
@@ -62,7 +62,7 @@ function Footer() {
   return (
     <footer className="pt-4 pt-md-5 border-top border-custom-color">
       <div className="row">
-        <div className="col-12 col-md text-md-start">
+        <div className="col-6 col-md text-md-start">
           <legend className="brand">noorr.net</legend>
           <small className="d-block mb-3 text-muted">
             © 2015 – {new Date().getFullYear()}
