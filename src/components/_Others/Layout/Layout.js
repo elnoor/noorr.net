@@ -97,7 +97,7 @@ function Footer() {
                 className="link-secondary text-decoration-none"
                 to="/projects"
               >
-                My Projects
+                My projects
               </Link>
             </li>
           </ul>
@@ -126,46 +126,59 @@ function Footer() {
               </a>
             </li>
             <li className="mb-1">
-              <Link
+              <a
                 className="link-secondary text-decoration-none"
-                to="projects/run"
+                href="/Elnur_Mammadli_Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
               >
-                Run Against Gravity
-              </Link>
+                My resume
+              </a>
             </li>
           </ul>
         </div>
         <div className="col-6 col-md text-md-start">
-          <h5 className="text-light text-opacity-75">Me on</h5>
+          <h5 className="text-light text-opacity-75">Find me</h5>
           <ul className="list-unstyled text-small">
             <li className="mb-1">
-              <Link className="link-secondary text-decoration-none" to="/about">
+              <a
+                className="link-secondary text-decoration-none"
+                href="https://www.linkedin.com/in/elnoor/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 LinkedIn
-              </Link>
+              </a>
             </li>
             <li className="mb-1">
-              <Link
+              <a
                 className="link-secondary text-decoration-none"
-                to="/contact"
+                href="https://github.com/elnoor"
+                target="_blank"
+                rel="noreferrer"
               >
                 GitHub
-              </Link>
+              </a>
             </li>
             <li className="mb-1">
-              <Link
+              <a
                 className="link-secondary text-decoration-none"
-                to="/skills"
+                href="https://stackoverflow.com/users/5435780/elnoor"
+                target="_blank"
+                rel="noreferrer"
               >
                 Stack Overflow
-              </Link>
+              </a>
             </li>
             <li className="mb-1">
-              <Link
+              <a
                 className="link-secondary text-decoration-none"
-                to="/projects"
+                href="https://medium.com/@elnoor"
+                target="_blank"
+                rel="noreferrer"
               >
                 Medium
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
