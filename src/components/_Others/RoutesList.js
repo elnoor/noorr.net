@@ -6,7 +6,6 @@ import NotFound from "./../../pages/NotFound/NotFound";
 import About from "./../../pages/About/About";
 import Projects from "./../../pages/Projects/Projects";
 import Skills from "./../../pages/Skills/Skills";
-import RunGame from "./../../pages/Projects/RunGame/RunGame";
 
 export default function RoutesList() {
   return (
@@ -20,7 +19,7 @@ export default function RoutesList() {
       <Route path="contact" element={<Contact />} />
       <Route path="projects" element={<Projects />}>
         <Route index element={<Projects />} />
-        <Route path="run" element={<RunGame />} />
+        {/* <Route path="run" element={<RunGame />} /> */}
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
