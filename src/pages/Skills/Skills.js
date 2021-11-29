@@ -1,11 +1,57 @@
 import React from "react";
+import "./Skills.scss";
+import { skillsData, SKILL_LEVEL } from "./skillsData.js";
 
 export default function Skills() {
   return (
-    <div className="row">
-      <div className="col-12 text-center">
-        <p>Some the skills that (I think) I possess.</p>
+    <div className="skills">
+      <div className="row">
+        <div className="col-12 text-center mb-3">
+          <p>Some the skills that (I think) I possess.</p>
+        </div>
+        <div className="table-responsive">
+          <table className="table text-secondary table-hover">
+            <thead>
+              <tr className="text-light text-opacity-75">
+                <th scope="col" className="col-2">
+                  Skills
+                </th>
+                {Object.keys(SKILL_LEVEL).map((level) => {
+                  return (
+                    <th key={level} scope="col-2" className="text-center col-2">
+                      {level}
+                    </th>
+                  );
+                })}
+              </tr>
+            </thead>
+            <tbody>
+              {skillsData.map((skill, index) => {
+                return (
+                  <tr key={index} className="border-custom-color">
+                    <td>{skill[0]}</td>
+                    {Object.entries(SKILL_LEVEL).map(([key, value]) => {
+                      return (
+                        <td className="text-center" key={value}>
+                          {skill[1] === value && <CheckMark title={key} />}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
+  );
+}
+
+function CheckMark({ title }) {
+  return (
+    <span className="fs-3 text-info text-center mt-3 check" title={title}>
+      ✓
+    </span>
   );
 }

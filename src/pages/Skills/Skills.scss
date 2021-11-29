@@ -1,0 +1,10 @@
+.skills {
+  .check {
+    line-height: 0;
+  }
+
+  .table-hover tbody tr:hover td {
+    color: white;
+    cursor: pointer;
+  }
+}
