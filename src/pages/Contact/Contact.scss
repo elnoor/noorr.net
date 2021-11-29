@@ -1,0 +1,11 @@
+.contact {
+  /* Invisible Honeypot field for spam detection */
+  .gorunmez {
+    position: absolute !important;
+    width: 20px !important;
+    height: 20px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: -1 !important;
+  }
+}

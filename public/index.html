@@ -44,5 +44,14 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- Hidden form to make Netlify Forms work with JS generated form in Contact page -->
+    <form name="contact-form" netlify netlify-honeypot="subject" hidden>
+      <input type="text" name="name" />
+      <input type="text" name="contactInfo" />
+      <textarea name="message"></textarea>
+      <!-- Honeypot spam detecting field -->
+      <input type="text" name="subject" />
+    </form>
   </body>
 </html>
