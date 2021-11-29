@@ -128,6 +128,16 @@ function Footer() {
             <li className="mb-1">
               <a
                 className="link-secondary text-decoration-none"
+                href="/RunGame"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Run Against Gravity
+              </a>
+            </li>
+            <li className="mb-1">
+              <a
+                className="link-secondary text-decoration-none"
                 href="/Elnur_Mammadli_Resume.pdf"
                 target="_blank"
                 rel="noreferrer"
