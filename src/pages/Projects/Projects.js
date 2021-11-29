@@ -13,7 +13,7 @@ export default function Projects() {
       {projectsData.map((project, index) => {
         return (
           <div key={index} className="col-md-6 mt-4">
-            <div className="card shadow bg-dark border border-custom-color overflow-hidden">
+            <div className="card h-100 shadow bg-dark border border-custom-color overflow-hidden">
               {project.image ? (
                 <img
                   src={project.image}
@@ -32,31 +32,31 @@ export default function Projects() {
                   {project.name}
                 </h5>
                 <p className="card-text">{project.description}</p>
-                <div className="d-flex">
-                  {project.link && (
-                    <a
-                      href={project.link}
-                      className="btn btn-outline-info btn-sm"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      {project.linkText ? project.linkText : "View"}
-                    </a>
-                  )}
-                  {!project.active && (
-                    <small className="text-warning text-opacity-25">
-                      Removed, this project is not active
-                    </small>
-                  )}
-                  {project.year && (
-                    <small
-                      className="text-muted ms-auto"
-                      title="The year it was developed"
-                    >
-                      {project.year}
-                    </small>
-                  )}
-                </div>
+              </div>
+              <div className="card-footer d-flex">
+                {project.link && (
+                  <a
+                    href={project.link}
+                    className="btn btn-outline-info btn-sm"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {project.linkText ? project.linkText : "View"}
+                  </a>
+                )}
+                {!project.active && (
+                  <small className="text-warning text-opacity-25">
+                    Removed, this project is not active
+                  </small>
+                )}
+                {project.year && (
+                  <small
+                    className="text-muted ms-auto mt-auto"
+                    title="The year it was developed"
+                  >
+                    {project.year}
+                  </small>
+                )}
               </div>
             </div>
           </div>
