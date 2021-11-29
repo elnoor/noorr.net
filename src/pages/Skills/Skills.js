@@ -6,8 +6,8 @@ export default function Skills() {
   return (
     <div className="skills">
       <div className="row">
-        <div className="col-12 text-center mb-3">
-          <p>Some the skills that I possess.</p>
+        <div className="col-12 text-center mb-5">
+          Some the skills that I possess.
         </div>
         <div className="table-responsive">
           <table className="table text-secondary table-hover">

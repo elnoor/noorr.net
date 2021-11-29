@@ -4,15 +4,13 @@ import { projectsData } from "./projectsData";
 export default function Projects() {
   return (
     <div className="row">
-      <div className="col-12 text-center">
-        <p>
-          Some of the projects that i built just to have fun when I had some
-          spare time.
-        </p>
+      <div className="col-12 text-center mb-5">
+        Some of the projects that i built just to have fun when I had some spare
+        time.
       </div>
       {projectsData.map((project, index) => {
         return (
-          <div key={index} className="col-md-6 mt-4">
+          <div key={index} className="col-md-6">
             <div className="card h-100 shadow bg-dark border border-custom-color overflow-hidden">
               {project.image ? (
                 <img
