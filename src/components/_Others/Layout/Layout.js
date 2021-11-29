@@ -7,7 +7,7 @@ export default function Layout({ children }) {
     <div className="app">
       <div className="container py-3 text-secondary">
         <Header />
-        <main className="py-md-5">{children}</main>
+        <main className="py-3 py-md-5">{children}</main>
         <Footer />
       </div>
     </div>
