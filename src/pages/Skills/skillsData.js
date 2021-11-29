@@ -25,6 +25,7 @@ export const skillsData = [
   ["Java", SKILL_LEVEL.Intermediate],
   ["Python", SKILL_LEVEL.Competent],
   ["PHP", SKILL_LEVEL.Intermediate],
+  ["NodeJS", SKILL_LEVEL.Competent],
   ["MySQL", SKILL_LEVEL.Intermediate],
   ["Git", SKILL_LEVEL.Pro],
   ["Docker", SKILL_LEVEL.Beginner],
