@@ -28,11 +28,11 @@ export default function Skills() {
             <tbody>
               {skillsData.map((skill, index) => {
                 return (
-                  <tr key={index} className="border-custom-color">
-                    <td>{skill[0]}</td>
+                  <tr key={index} className="border-custom-color text-center">
+                    <td className="text-start">{skill[0]}</td>
                     {Object.entries(SKILL_LEVEL).map(([key, value]) => {
                       return (
-                        <td className="text-center" key={value}>
+                        <td key={value}>
                           {skill[1] === value && <CheckMark title={key} />}
                         </td>
                       );
@@ -50,7 +50,7 @@ export default function Skills() {
 
 function CheckMark({ title }) {
   return (
-    <span className="fs-3 text-info text-center mt-3 check" title={title}>
+    <span className="fs-3 text-info mt-3 check" title={title}>
       ✓
     </span>
   );

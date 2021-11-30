@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { LoadingSpinner } from "../../components/LoadingSpinner";
+import {
+  stripHtmlTags,
+  isValidImage,
+  formatDate,
+} from "../../helpers/utilities";
 
 export default function Blog() {
   const [posts, setPosts] = useState([]);
@@ -34,15 +39,17 @@ export default function Blog() {
           <LoadingSpinner />
         </div>
       ) : posts.length === 0 ? (
-        <div className="col-12 text-center">No posts found</div>
+        <div className="col-12 text-center">
+          No posts found... Looks like I have been busy (:
+        </div>
       ) : (
-        posts.map((post, index) => <PostCards key={index} post={post} />)
+        posts.map((post, index) => <PostCard key={index} post={post} />)
       )}
     </div>
   );
 }
 
-function PostCards({ post }) {
+function PostCard({ post }) {
   const hasThumbnail = isValidImage(post.thumbnail);
   return (
     <div className="col-md-6">
@@ -61,13 +68,13 @@ function PostCards({ post }) {
         )}
         <div
           className={
-            "card-img-overlay bg-black " +
+            "d-flex flex-column card-img-overlay bg-black " +
             (hasThumbnail ? "bg-opacity-75" : "bg-opacity-25")
           }
         >
-          <div className="h-auto">
-            <h5 className="card-title">{post.title}</h5>
-            <p className="card-text">
+          <div className="h-100">
+            <h5 className="card-title text-light">{post.title}</h5>
+            <p className="card-text text-light text-opacity-75">
               {getCleanShortDescription(post.description)}
             </p>
           </div>
@@ -78,9 +85,11 @@ function PostCards({ post }) {
               target="_blank"
               rel="noreferrer"
             >
-              Continue Reading
+              Continue reading
             </a>
-            <small className="text-muted ms-auto mt-auto">{post.pubDate}</small>
+            <small className="text-muted ms-auto mt-auto">
+              {formatDate(post.pubDate)}
+            </small>
           </div>
         </div>
       </div>
@@ -88,10 +97,6 @@ function PostCards({ post }) {
   );
 }
 
-function isValidImage(fileName) {
-  return fileName.match(/.(jpg|jpeg|png|gif)$/i);
-}
-
 function getCleanShortDescription(description) {
-  return description.substring(0, 200).replace(/(<([^>]+)>)/gi, ""); // strip html tags
+  return stripHtmlTags(description.substring(0, 200));
 }
