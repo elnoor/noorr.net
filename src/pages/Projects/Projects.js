@@ -11,7 +11,7 @@ export default function Projects() {
       {projectsData.map((project, index) => {
         return (
           <div key={index} className="col-md-6 mb-4">
-            <div className="card h-100 shadow bg-dark border border-custom-color overflow-hidden">
+            <div className="card h-100 shadow bg-black bg-opacity-25 border border-custom-color overflow-hidden">
               {project.image ? (
                 <img
                   src={project.image}

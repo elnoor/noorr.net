@@ -12,15 +12,8 @@ export default function Blog() {
       )
         .then((res) => res.json())
         .then((data) => {
-          debugger;
           if (data.items.length > 0) {
-            // // Filter for actual posts. Comments don't have categories, therefore can filter for items with categories more than 0
-            // const _posts = data.items.filter(
-            //   (item) => item.categories.length > 0
-            // );
-            // if (_posts.length > 0) {
             setPosts(data.items);
-            // }
           }
         })
         .catch((error) => alert(error))
@@ -50,38 +43,53 @@ export default function Blog() {
 }
 
 function PostCards({ post }) {
+  const hasThumbnail = isValidImage(post.thumbnail);
   return (
     <div className="col-md-6">
-      <div className="card">
-        <div className="row g-0">
-          <div className="col-md-8">
-            <div className="card-body">
-              <h5 className="card-title">{post.title}</h5>
-              <p className="card-text">
-                {getCleanShortDescription(post.description)}
-              </p>
-              <p className="card-text mb-auto">
-                <small className="text-muted">{post.pubDate}</small>
-              </p>
-              <a href={post.guid} className="stretched-link">
-                Continue reading
-              </a>
-            </div>
+      <div
+        className="card bg-dark text-white border border-custom-color shadow"
+        style={{
+          height: "12rem",
+        }}
+      >
+        {hasThumbnail && (
+          <img
+            src={post.thumbnail}
+            className="card-img h-100 object-fit-cover"
+            alt={post.title}
+          />
+        )}
+        <div
+          className={
+            "card-img-overlay bg-black " +
+            (hasThumbnail ? "bg-opacity-75" : "bg-opacity-25")
+          }
+        >
+          <div className="h-auto">
+            <h5 className="card-title">{post.title}</h5>
+            <p className="card-text">
+              {getCleanShortDescription(post.description)}
+            </p>
           </div>
-          <div className="col-md-4">
-            <img
-              src={post.thumbnail}
-              className="img-fluid w-100 h-100"
-              style={{
-                objectFit: "cover",
-              }}
-              alt={post.title}
-            />
+          <div className="d-flex">
+            <a
+              href={post.guid}
+              className="text-info"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Continue Reading
+            </a>
+            <small className="text-muted ms-auto mt-auto">{post.pubDate}</small>
           </div>
         </div>
       </div>
     </div>
   );
+}
+
+function isValidImage(fileName) {
+  return fileName.match(/.(jpg|jpeg|png|gif)$/i);
 }
 
 function getCleanShortDescription(description) {
