@@ -34,6 +34,7 @@ export default function Blog() {
           or at least from now on...
         </span>
       </div>
+
       {loading ? (
         <div className="col-12 text-center">
           <LoadingSpinner />
@@ -43,7 +44,29 @@ export default function Blog() {
           No posts found... Looks like I have been busy (:
         </div>
       ) : (
-        posts.map((post, index) => <PostCard key={index} post={post} />)
+        <>
+          {posts.length >= 10 && (
+            <div className="col-12">
+              <div className="my-4 p-3 border border-custom-color rounded-1 shadow text-center">
+                Medium's RSS feed allows me to fetch and display{" "}
+                <strong>only 10 articles</strong> here. Please, check
+                <a
+                  className="text-info mx-2 fw-bold"
+                  href="https://medium.com/@elnoor"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  my Medium profile
+                </a>
+                to view all stories of mine.
+              </div>
+            </div>
+          )}
+
+          {posts.map((post, index) => (
+            <PostCard key={index} post={post} />
+          ))}
+        </>
       )}
     </div>
   );
