@@ -25,31 +25,40 @@ function Header() {
           <span className="brand fs-2 lh-1">Elnur Mammadli</span>
         </Link>
 
-        <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-          <NavLink to="/" className="me-4 py-2 link-info text-decoration-none">
+        <nav className="d-inline-flex mt-2 mt-md-0 ms-md-auto mw-100 overflow-auto">
+          <NavLink
+            to="/"
+            className="me-3 me-md-4 py-2 link-info text-decoration-none"
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/"
+            className="me-3 me-md-4 py-2 link-info text-decoration-none"
+          >
             Home
           </NavLink>
           <NavLink
             to="/about"
-            className="me-4 py-2 link-info text-decoration-none"
+            className="me-3 me-md-4 py-2 link-info text-decoration-none"
           >
             About
           </NavLink>
           <NavLink
             to="/projects"
-            className="me-4 py-2 link-info text-decoration-none"
+            className="me-3 me-md-4 py-2 link-info text-decoration-none"
           >
             Projects
           </NavLink>
           <NavLink
             to="/skills"
-            className="me-4 py-2 link-info text-decoration-none"
+            className="me-3 me-md-4 py-2 link-info text-decoration-none"
           >
             Skills
           </NavLink>
           <NavLink
             to="/blog"
-            className="me-4 py-2 link-info text-decoration-none"
+            className="me-3 me-md-4 py-2 link-info text-decoration-none"
           >
             Blog
           </NavLink>

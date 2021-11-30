@@ -52,7 +52,7 @@ export default function Blog() {
 function PostCard({ post }) {
   const hasThumbnail = isValidImage(post.thumbnail);
   return (
-    <div className="col-md-6">
+    <div className="col-md-6 mb-4">
       <div
         className="card bg-dark text-white border border-custom-color shadow"
         style={{
