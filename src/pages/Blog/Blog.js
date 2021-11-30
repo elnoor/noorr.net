@@ -98,5 +98,5 @@ function PostCard({ post }) {
 }
 
 function getCleanShortDescription(description) {
-  return stripHtmlTags(description.substring(0, 200));
+  return stripHtmlTags(description.substring(0, 180)) + " ...";
 }

@@ -33,32 +33,26 @@ function Header() {
             Home
           </NavLink>
           <NavLink
-            to="/"
-            className="me-3 me-md-4 py-2 link-info text-decoration-none"
-          >
-            Home
-          </NavLink>
-          <NavLink
             to="/about"
-            className="me-3 me-md-4 py-2 link-info text-decoration-none"
+            className="me-4 py-2 link-info text-decoration-none"
           >
             About
           </NavLink>
           <NavLink
             to="/projects"
-            className="me-3 me-md-4 py-2 link-info text-decoration-none"
+            className="me-4 py-2 link-info text-decoration-none"
           >
             Projects
           </NavLink>
           <NavLink
             to="/skills"
-            className="me-3 me-md-4 py-2 link-info text-decoration-none"
+            className="me-4 py-2 link-info text-decoration-none"
           >
             Skills
           </NavLink>
           <NavLink
             to="/blog"
-            className="me-3 me-md-4 py-2 link-info text-decoration-none"
+            className="me-4 py-2 link-info text-decoration-none"
           >
             Blog
           </NavLink>
