@@ -48,6 +48,12 @@ function Header() {
             Skills
           </NavLink>
           <NavLink
+            to="/blog"
+            className="me-4 py-2 link-info text-decoration-none"
+          >
+            Blog
+          </NavLink>
+          <NavLink
             to="/contact"
             className="py-2 link-info text-decoration-none"
           >

@@ -19,10 +19,7 @@ export default function RoutesList() {
       <Route path="skills" element={<Skills />} />
       <Route path="contact" element={<Contact />} />
       <Route path="blog" element={<Blog />} />
-      <Route path="projects" element={<Projects />}>
-        <Route index element={<Projects />} />
-        {/* <Route path="run" element={<RunGame />} /> */}
-      </Route>
+      <Route path="projects" element={<Projects />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
