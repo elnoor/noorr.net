@@ -47,7 +47,7 @@ export default function Contact() {
         In case you have something to tell me
       </div>
 
-      <form className="row d-flex" onSubmit={onSubmit}>
+      <form className="row" onSubmit={onSubmit}>
         <div className="col-md-6 mb-3">
           <div className="form-floating">
             <input
