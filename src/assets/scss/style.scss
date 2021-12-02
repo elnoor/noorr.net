@@ -13,3 +13,21 @@
 .object-fit-cover {
   object-fit: cover;
 }
+
+// will limit text to single line only and display ellipsis (3 dots) in the end
+.text-ellipsis-nowrap {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// will limit text to max of 4 lines only and hide the rest
+// number of lines = max-height / line-height
+.text-break-max-4-lines {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  word-wrap: break-word;
+  max-height: 6em;
+  line-height: 1.5em;
+}

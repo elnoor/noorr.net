@@ -3,7 +3,7 @@ export function isValidImage(fileName) {
 }
 
 export function stripHtmlTags(str) {
-  return str.replace(/(<([^>]+)>)/gi, "");
+  return str.replace(/<\/?("[^"]*"|'[^']*'|[^>])*(>|$)/g, "");
 }
 
 // will format date like "Nov 27, 2021"

@@ -81,6 +81,7 @@ function PostCard({ post }) {
         style={{
           height: "12rem",
         }}
+        title={post.title}
       >
         {hasThumbnail && (
           <img
@@ -96,8 +97,10 @@ function PostCard({ post }) {
           }
         >
           <div className="h-100">
-            <h5 className="card-title text-light">{post.title}</h5>
-            <p className="card-text text-light text-opacity-75">
+            <h5 className="card-title text-light text-ellipsis-nowrap">
+              {post.title}
+            </h5>
+            <p className="card-text text-light text-opacity-75 text-break-max-4-lines">
               {getCleanShortDescription(post.description)}
             </p>
           </div>
@@ -121,5 +124,5 @@ function PostCard({ post }) {
 }
 
 function getCleanShortDescription(description) {
-  return stripHtmlTags(description.substring(0, 180)) + " ...";
+  return stripHtmlTags(description.substring(0, 200)) + " ...";
 }
