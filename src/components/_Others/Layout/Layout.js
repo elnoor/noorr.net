@@ -1,13 +1,15 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import "./Layout.scss";
 
-export default function Layout({ children }) {
+export default function Layout() {
   return (
     <div className="app">
       <div className="container py-3 text-secondary">
         <Header />
-        <main className="py-3 py-md-5">{children}</main>
+        <main className="py-3 py-md-5">
+          <Outlet />
+        </main>
         <Footer />
       </div>
     </div>
