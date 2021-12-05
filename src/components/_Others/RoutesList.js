@@ -14,13 +14,13 @@ export default function RoutesList() {
       <Route path="/" element={<Home />}>
         <Route index element={<Home />} />
         <Route path="home" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="skills" element={<Skills />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
-      <Route path="about" element={<About />} />
-      <Route path="skills" element={<Skills />} />
-      <Route path="contact" element={<Contact />} />
-      <Route path="blog" element={<Blog />} />
-      <Route path="projects" element={<Projects />} />
-      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
