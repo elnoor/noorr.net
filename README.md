@@ -3,3 +3,5 @@
 # My personal website's source code
 
 View it in action at ***[noorr.net](https://noorr.net)***.
+
+Note: emails to *@noorr.net has been configured to be forwarded to Gmail via [ImproveMX](https://improvmx.com/).
