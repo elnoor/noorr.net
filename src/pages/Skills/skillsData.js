@@ -12,6 +12,7 @@ export const skillsData = [
   [".NET Core", SKILL_LEVEL.Pro],
   ["JavaScript", SKILL_LEVEL.Pro],
   ["React", SKILL_LEVEL.Pro],
+  ["React Native", SKILL_LEVEL.Skilled],
   ["SQL Server", SKILL_LEVEL.Skilled],
   ["Azure", SKILL_LEVEL.Skilled],
   ["Azure Devops", SKILL_LEVEL.Skilled],
