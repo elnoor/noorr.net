@@ -6,8 +6,19 @@ import elandiyaImg from "./images/elandiya.png";
 import milkywayImg from "./images/milkyway.png";
 import angoraImg from "./images/angora.png";
 import snakeImg from "./images/snake.png";
+import metamilImg from "./images/metamil.jpg";
 
 export const projectsData = [
+  {
+    active: true,
+    name: "Meta Milyoner (Millionaire)",
+    image: metamilImg,
+    year: 2022,
+    link: "https://metamil.app",
+    linkText: "View",
+    description:
+      "Meta Milyoner is a quiz competition game like Millionaire TV show. In this game players can also add their own questions which are to be approved by moderators before they can be played by others during the game. Game has 2 modes: Standard mode with 15 serious questions from 3 difficulty levels and Funny mode where questions are meant to be jokes. Tech stack for this game is React Native, JavaScript, .NET 6, C#, SQL Server, Azure. Currently it is only available in Azerbaijani and I have plans to add English soon too. While it can be played online at www.metamil.app, it is also available as native iOS and Android games at AppStore and Play Store.",
+  },
   {
     active: true,
     name: "Candy Snake",
