@@ -1,7 +1,7 @@
 import React from "react";
 import me_avatar from "../../assets/images/me_avatar.png";
-import { WelcomeText } from "./../Home/Home";
 import { faqs } from "./faqs";
+import WelcomeText from "./../Home/WelcomeText";
 
 export default function About() {
   return (
