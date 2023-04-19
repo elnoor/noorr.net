@@ -26,8 +26,8 @@ export default function About() {
           to get my full resume.
         </div>
       </div>
-      <div className="col mt-2">
-        <h4 className="mb-3 text-white-50">My frequent answers</h4>
+      <details className="col mt-2">
+        <summary><h4 className="mb-3 text-white-50">My frequent answers</h4></summary>
         <dl className="row">
           {faqs.map((faq, index) => (
             <React.Fragment key={index}>
@@ -36,7 +36,7 @@ export default function About() {
             </React.Fragment>
           ))}
         </dl>
-      </div>
+      </details>
     </div>
   );
 }
