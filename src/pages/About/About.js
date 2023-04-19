@@ -27,7 +27,7 @@ export default function About() {
         </div>
       </div>
       <details className="col mt-2">
-        <summary><h4 className="mb-3 text-white-50">My frequent answers</h4></summary>
+        <summary className="h4 mb-3 text-white-50">My frequent answers</summary>
         <dl className="row">
           {faqs.map((faq, index) => (
             <React.Fragment key={index}>
