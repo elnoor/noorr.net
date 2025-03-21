@@ -75,7 +75,7 @@ function Footer() {
       <div className="row">
         <div className="col-6 col-md text-md-start">
           <legend className="brand">noorr.net</legend>
-          <small className="d-block mb-3 text-muted">
+          <small className="d-block mb-3">
             © 2015 – {new Date().getFullYear()}
           </small>
         </div>

@@ -49,7 +49,7 @@ export default function Projects() {
                 )}
                 {project.year && (
                   <small
-                    className="text-muted ms-auto mt-auto"
+                    className="text-dark-emphasis ms-auto mt-auto"
                     title="The year it was developed"
                   >
                     {project.year}

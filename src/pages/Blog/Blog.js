@@ -113,7 +113,7 @@ function PostCard({ post }) {
             >
               Continue reading
             </a>
-            <small className="text-muted ms-auto mt-auto">
+            <small className="text-dark-emphasis ms-auto mt-auto">
               {formatDate(post.pubDate)}
             </small>
           </div>
