@@ -7,7 +7,7 @@ export default function Skills() {
     <div className="skills">
       <div className="row">
         <div className="col-12 text-center mb-5">
-          Some the skills that I possess.
+          Some of the skills that I possess.
         </div>
         <div className="table-responsive">
           <table className="table text-secondary table-hover">
