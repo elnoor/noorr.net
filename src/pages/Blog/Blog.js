@@ -100,7 +100,7 @@ function PostCard({ post }) {
             <h5 className="card-title text-light text-ellipsis-nowrap">
               {post.title}
             </h5>
-            <p className="card-text text-light text-opacity-75 text-break-max-4-lines">
+            <p className="card-text text-secondary text-break-max-4-lines">
               {getCleanShortDescription(post.description)}
             </p>
           </div>

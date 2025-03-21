@@ -10,7 +10,7 @@ export default function Skills() {
           Some of the skills that I possess.
         </div>
         <div className="table-responsive">
-          <table className="table text-secondary table-hover">
+          <table className="table text-secondary table-hover table-dark">
             <thead>
               <tr className="text-light text-opacity-75">
                 <th scope="col" className="col-2">

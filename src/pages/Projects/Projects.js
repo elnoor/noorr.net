@@ -29,7 +29,7 @@ export default function Projects() {
                 <h5 className="card-title text-light text-opacity-75">
                   {project.name}
                 </h5>
-                <p className="card-text">{project.description}</p>
+                <p className="card-text text-secondary">{project.description}</p>
               </div>
               <div className="card-footer d-flex">
                 {project.link && (
