@@ -1,7 +1,7 @@
 import React from "react";
 import me_avatar from "../../assets/images/me_avatar.png";
 import { faqs } from "./faqs";
-import WelcomeText from "./../Home/WelcomeText";
+import { WelcomeText } from "../Home/Home";
 
 export default function About() {
   return (
@@ -10,7 +10,7 @@ export default function About() {
         <img src={me_avatar} className="img-thumbnail" alt="Me Avatar" />
       </div>
       <div className="col text-justified">
-        <WelcomeText />
+        {WelcomeText}
       </div>
       <div className="col-12">
         <div className="my-4 py-3 border border-custom-color rounded-1 shadow text-center">
